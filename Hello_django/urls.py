@@ -19,5 +19,6 @@ from django.contrib import admin
 from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/<nome>', views.hello)
+    #path('hello/<nome>', views.hello)
+    path('hello/<valor1>/<valor2>', views.hello)
 ]
